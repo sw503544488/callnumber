@@ -19,7 +19,8 @@ btnCallNumber.onclick=()=> {
   if (m===undefined) {
    return ''
   }else{
-  divScreen.innerText+='请 '+m+'号就餐'
+  divScreen.innerHTML+='<div>请 '+m+'号就餐</div>'
   spanqueue.innerText=JSON.stringify(queue)
+  divScreen.scrollTo(0,5000)
   }
 }
